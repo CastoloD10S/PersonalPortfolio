@@ -40,8 +40,9 @@ En cuanto a la paleta de colores, esta fue inspirada por la ![xbox](https://img.
 
 ## Instalación
 
+bajas el repo, lo abres en la terminal y escribes 
 ```bash
-bajas el repo, lo abres en la terminal y escribes npm intall
+npm intall
 ```
 
 ## Scripts
