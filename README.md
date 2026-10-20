@@ -18,10 +18,17 @@ En cuanto a la paleta de colores, esta fue inspirada por la ![xbox](https://img.
 
 - **Header** con foto de perfil, datos personales, estadísticas, botón de contacto y enlaces a redes sociales.
 - **Navegación por pestañas**: Proyectos, Experiencia, Habilidades y Contacto.
-- **Formulario de contacto** validado en el cliente (nombre requerido, correo válido y mensaje de al menos 10 caracteres). Al enviarse abre el cliente de correo con los datos cargados.
+- **Formulario de contacto** validado en el lado del cliente (nombre requerido, correo válido y mensaje de al menos 10 caracteres). Al enviarse abre el cliente de correo con los datos cargados.
 - **Footer** con redes sociales y año actual.
 - Diseño responsive (mobile first) con Tailwind CSS.
 - Suite de pruebas con Vitest y Testing Library.
+
+## Explicacion
+
+- El proyecto tiene los datos en Index.jsx, la cual es importada desde Header.jsx, Footer.jsx, Projects.jsx, Experience.jsx, Skills.jsx y a ContactForm, cada una leyendo lo que le corresponde.
+- Los componentes de Projects, Experience, Skills y ContactForm se importan dede Content.jsx donde tambien se importa el componente tabs desde Index.jsx, controla las tabs activas (useEstate) y renderiza la que correspondiente.
+- Al final la pagina se arma en App.jsx, donde se compone dentro de un contenedor el Header, Content y Footer.
+
 
 ## Tecnologías
 
@@ -34,9 +41,7 @@ En cuanto a la paleta de colores, esta fue inspirada por la ![xbox](https://img.
 ## Instalación
 
 ```bash
-git clone <URL-DEL-REPOSITORIO>
-cd <nombre-del-proyecto>
-npm install
+bajas el repo, lo abres en la terminal y escribes npm intall
 ```
 
 ## Scripts
